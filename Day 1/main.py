@@ -18,7 +18,11 @@ print(f"Elf {carriedCal.index(maxCal)} is holding the most calories, {maxCal}.")
 # -- end of part 1 -- #
 
 carriedCalSorted = sorted(carriedCal, reverse=True)
-print(f"Elves {carriedCal.index(carriedCalSorted[0])}, {carriedCal.index(carriedCalSorted[1])}, "
-      f"and {carriedCal.index(carriedCalSorted[2])} are carrying the most calories - {carriedCalSorted[0]}, "
-      f"{carriedCalSorted[1]}, and {carriedCalSorted[2]} respectively. That's a total of "
-      f"{carriedCalSorted[0] + carriedCalSorted[1] + carriedCalSorted[2]}")
+
+top1Carried = carriedCalSorted[0]
+top2Carried = carriedCalSorted[1]
+top3Carried = carriedCalSorted[2]
+
+print(f"Elves {carriedCal.index(top1Carried)}, {carriedCal.index(top2Carried)}, and {carriedCal.index(top3Carried)} "
+      f"are carrying the most calories - {top1Carried}, {top2Carried}, and {top3Carried} respectively. "
+      f"That's a total of {top1Carried + top2Carried + top3Carried}")
